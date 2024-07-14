@@ -6,7 +6,6 @@ body {
     line-height: 1.5;
 }
   
-
 .header {
     display: flex;
     border-bottom: 1px solid #000;
@@ -33,15 +32,14 @@ h1, h2, h3 {
     letter-spacing: 0.01em;
 }
 
-ul {
+.nav-menu {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+    gap: 30px; 
 }
-ul > li:not(:last-child) {
-    margin-right: 30px;
-}
+
 .box {
     display: flex;
     margin-bottom: 30px;
@@ -53,19 +51,36 @@ ul > li:not(:last-child) {
     padding: 10px 20px;
 }
 
+.results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+
 section {
     background-color: lavender;
-    padding: 5px 20px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .post {
     padding-bottom: 20px;
 }
 
-p > a {
+.link {
+    display: block;
     background-color: rebeccapurple;
     color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: darkviolet;
+}
+
+p > a.link {
     padding: 8px 15px;
 }
 
